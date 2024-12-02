@@ -62,7 +62,7 @@ function Questions() {
     };
 
     return (
-        <div className="flex items-center justify-center my-12">
+        <div className="flex items-center justify-center min-h-screen my-12">
             <div className="bg-emerald-50 py-8 px-6 rounded-lg shadow-lg max-w-screen-md w-full mx-5">
                 <div className="flex justify-between items-center mb-6">
                     <span className="text-emerald-800 font-medium">
