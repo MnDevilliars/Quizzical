@@ -1,4 +1,5 @@
 import React from 'react'
+import logoImgUrl from '../assets/logo.png'
 
 function Logo({
   className = "",
@@ -6,7 +7,7 @@ function Logo({
   return (
     <div>
       <img
-        src="https://play-lh.googleusercontent.com/VpIV5wjUERZ-dTZxuIyiqv8XkZqbcgQTxqNJnwCcszLPGezPUEY-PSTxKySq-qhf" alt="Logo"
+        src= {logoImgUrl} alt="Logo"
         className={`${className} bg-yellow-300 rounded-full bg-cover w-14 h-14 `}
       />
     </div>

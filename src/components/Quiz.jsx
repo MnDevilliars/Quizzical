@@ -2,12 +2,15 @@ import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import playClickSound from '../sound/sound.js';
 import GameContext from '../context/gameContext.js'
+import litImgUrl from '../assets/literature.webp'
+import gkImgUrl from '../assets/gk.webp'
+import sciImgUrl from '../assets/science.jpg'
 
 function Quiz() {
     const categories = [
-        { id: "art-literature", index: 0, category: "Art and Literature", imageIconURL: "https://englishpluspodcast.com/wp-content/uploads/2024/02/Literary-Characters-Quiz.jpg" },
-        { id: "general-knowledge", index: 1, category: "General Knowledge", imageIconURL: "https://www.euroschoolindia.com/wp-content/uploads/2024/07/GK-Questions-for-Class-5.webp" },
-        { id: "science", index: 2, category: "Science and Nature", imageIconURL: "https://png.pngtree.com/thumb_back/fw800/background/20240119/pngtree-kids-science-student-3d-design-image_15611523.jpg" },
+        { id: "art-literature", index: 0, category: "Art and Literature", imageIconURL: litImgUrl },
+        { id: "general-knowledge", index: 1, category: "General Knowledge", imageIconURL: gkImgUrl },
+        { id: "science", index: 2, category: "Science and Nature", imageIconURL: sciImgUrl },
     ];
 
     const { setCategoryIndex } = useContext(GameContext)

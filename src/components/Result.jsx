@@ -3,6 +3,8 @@ import { FaWhatsapp, FaFacebook, FaInstagram } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import playClickSound from '../sound/sound.js';
 import GameContext from '../context/gameContext.js'
+import sadImgUrl from '../assets/sad_emoji.png'
+import trophyImgUrl from '../assets/trophy.png'
 
 function Result() {
     const { score } = useContext(GameContext)
@@ -36,7 +38,7 @@ function Result() {
 
                 <div className="flex justify-center mb-3">
                     <img
-                        src={(score < 50) ? "https://clipart-library.com/images/dT45bke8c.png" : "https://png.pngtree.com/png-vector/20231214/ourmid/pngtree-trophy-ai-victory-element-three-dimensional-buckle-free-pattern-png-image_11353051.png"}
+                        src={(score < 50) ? sadImgUrl : trophyImgUrl}
                         alt="Trophy"
                         className="w-24 h-24"
                     />

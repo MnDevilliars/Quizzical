@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import playClickSound from '../sound/sound'
 
 function Category() {
   const navigate = useNavigate();
@@ -11,7 +12,10 @@ function Category() {
         </h1>
         <button
           className='bg-emerald-500 px-6 py-3 text-lg font-bold rounded-lg hover:bg-emerald-700'
-          onClick={() => navigate('/')}
+          onClick={() => {
+            playClickSound()
+            navigate('/')
+          }}
         >
           Go Back To Home
         </button>

@@ -1,6 +1,9 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import playClickSound from '../sound/sound.js';
+import trophyImgUrl from '../assets/trophy.png'
+import bulbImgUrl from '../assets/bulb.webp'
+import friendsImgUrl from '../assets/friends.webp'
 
 
 function Home() {
@@ -23,7 +26,7 @@ function Home() {
     };
 
     return (
-        <div className="relative min-h-[75vh] md:min-h-[80vh] w-full flex flex-col justify-center items-center text-center text-white">
+        <div className="relative min-h-screen w-full flex flex-col justify-center items-center text-center text-white">
             <div className="relative z-10 flex flex-col items-center justify-center h-full space-y-6 px-5 md:px-12 pt-10 pb-6">
                 <h1 className="text-4xl sm:text-5xl font-bold tracking-wide">
                     Welcome to Quzzical
@@ -37,8 +40,8 @@ function Home() {
                     <div className="flex items-center justify-start space-x-4">
                         <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-indigo-600 shadow-xl">
                             <img
-                                className='w-12'
-                                src="https://static.vecteezy.com/system/resources/previews/033/267/309/non_2x/generative-ai-trophy-cup-champion-trophy-shiny-golden-cup-sport-award-winner-prize-png.png" alt="Trophy" />
+                                className='w-9'
+                                src={trophyImgUrl} alt="Trophy" />
 
                         </div>
                         <div className="text-lg font-bold">Track Your Progress</div>
@@ -47,7 +50,7 @@ function Home() {
                         <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-indigo-600 shadow-xl">
                             <img
                                 className='w-10'
-                                src="https://static.vecteezy.com/system/resources/thumbnails/019/023/716/small_2x/light-bulb-symbol-png.png" alt="Bulb" />
+                                src={bulbImgUrl} alt="Bulb" />
                         </div>
                         <div className="text-lg font-semibold">Engaging Content</div>
                     </div>
@@ -55,7 +58,7 @@ function Home() {
                         <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-indigo-600 shadow-xl">
                             <img
                                 className='w-10'
-                                src="https://static.vecteezy.com/system/resources/thumbnails/046/789/276/small_2x/boys-high-five-each-other-flat-illustration-png.png" alt="Challenge" />
+                                src={friendsImgUrl} alt="Challenge" />
                         </div>
                         <div className="text-lg font-semibold">Challenge Your Friends</div>
                     </div>
