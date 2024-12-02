@@ -29,7 +29,7 @@ function Result() {
                 ? 'Great job! Keep it up!'
                 : getMotivation();
 
-    const shareMessage = `I scored ${percentage}% in the quiz!`;
+    const shareMessage = `I scored ${percentage / 10}% in the quiz! Try it now https://quizzical-mnd-1715.vercel.app/`;
 
     return (
         <div className="flex items-center justify-center min-h-[70vh] md:min-h-[78vh] ">
